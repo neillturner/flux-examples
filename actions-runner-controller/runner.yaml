@@ -1,0 +1,27 @@
+---
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: myGithubOrg-runner
+  namespace: github-actions
+spec:
+  replicas: 1
+  template:
+    spec:
+      image: summerwind/actions-runner:v2.278.0-ubuntu-20.04-5f59734
+      dockerEnabled: true
+      dockerdWithinRunnerContainer: false
+      organization: myGithubOrg
+      group: myGithubOrg-group
+      labels:
+        - runner
+      serviceAccountName: github-actions-runner
+      securityContext:
+        fsGroup: 1447
+      resources:
+        limits:
+          cpu: '4'
+          memory: 8Gi
+        requests:
+          cpu: '2'
+          memory: 4Gi

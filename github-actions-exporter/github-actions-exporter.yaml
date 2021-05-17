@@ -1,0 +1,39 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: github-actions-exporter
+  namespace: github-actions-exporter
+spec:
+  interval: 30m
+  url: https://neillturner.github.io/helm-charts
+
+---
+
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: github-actions-exporter
+  namespace: github-actions-exporter
+spec:
+  chart:
+    spec:
+      chart: github-actions-exporter
+      version: "0.1.4"
+      sourceRef:
+        kind: HelmRepository
+        name: github-actions-exporter
+        namespace: github-actions-exporter
+  interval: 5m
+  install:
+    remediation:
+      retries: 3
+  values:
+    image:    
+      repository: ec2dream/github-actions-exporter
+      tag: "v1.8.2"
+    env:
+      GITHUB_ORGAS: "myGithubOrg"
+#      GITHUB_REPOS: "myGithubOrg/myRepo1,myGithubOrg/myRepo2"
+      GITHUB_REFRESH: 3600  # just every hour
+      PORT: 8080
+
