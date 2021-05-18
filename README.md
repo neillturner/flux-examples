@@ -18,6 +18,8 @@ Contains an example for defining a self-hosted github actions runner in kubernet
 
 Contains an example for defining a github actions exporter for prometheus metrics in kubernetes (EKS).
 
+A runner image can be built from https://github.com/ministryofjustice/docker-github-actions-runner
+
 ### prometheus directory 
 
 Contains an example for defining a Prometheus server in kubernetes (EKS) to forward metrics to an AWS Managed Prometheus.
