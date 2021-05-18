@@ -34,11 +34,9 @@ Contains an example for defining a Prometheus server in kubernetes (EKS) to forw
 ## References 
 
 - [https://neillwturner.medium.com/github-actions-self-hosted-runners-on-kubernetes-2cc0da04d41a](https://neillwturner.medium.com/github-actions-self-hosted-runners-on-kubernetes-2cc0da04d41a)
-
 - [https://github.com/actions-runner-controller/actions-runner-controller](https://github.com/actions-runner-controller/actions-runner-controller)
-
 - [https://github.com/Spendesk/github-actions-exporter](https://github.com/Spendesk/github-actions-exporter)
-
 - [https://aws.amazon.com/blogs/mt/getting-started-amazon-managed-service-for-prometheus/](https://aws.amazon.com/blogs/mt/getting-started-amazon-managed-service-for-prometheus/)
+- [https://aws.amazon.com/blogs/containers/building-a-gitops-pipeline-with-amazon-eks/](https://aws.amazon.com/blogs/containers/building-a-gitops-pipeline-with-amazon-eks/)
 
 
