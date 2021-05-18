@@ -17,7 +17,8 @@ Contains an example for defining a self-hosted github actions runner in kubernet
 I have not been able to get the supplied runner images to work:
 - https://hub.docker.com/r/summerwind/actions-runner
 - https://hub.docker.com/r/summerwind/actions-runner-dind
-and generally they don't meet your specific requirements for its necessary to build your own runner docker image. See: 
+
+and generally they don't meet your specific requirements so it is necessary to build your own runner docker image. See: 
 - https://github.com/ministryofjustice/docker-github-actions-runner
 - https://github.com/myoung34/docker-github-actions-runner
 
