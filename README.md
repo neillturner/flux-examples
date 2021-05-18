@@ -14,11 +14,14 @@ to create and update the kubernetes resources using public available helm charts
 
 Contains an example for defining a self-hosted github actions runner in kubernetes (EKS).
 
+Generally need to build a runner image to your specific requirements rather than use the runner supplied. See: 
+- https://github.com/ministryofjustice/docker-github-actions-runner
+- https://github.com/myoung34/docker-github-actions-runner
+
 ### github-actions-exporter directory 
 
 Contains an example for defining a github actions exporter for prometheus metrics in kubernetes (EKS).
 
-A runner image can be built from https://github.com/ministryofjustice/docker-github-actions-runner
 
 ### prometheus directory 
 
