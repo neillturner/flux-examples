@@ -35,7 +35,7 @@ Contains an example for defining a Prometheus server in kubernetes (EKS) to forw
 
 - [https://neillwturner.medium.com/github-actions-self-hosted-runners-on-kubernetes-2cc0da04d41a](https://neillwturner.medium.com/github-actions-self-hosted-runners-on-kubernetes-2cc0da04d41a)
 
-- [https://github.com/actions-runner-controller/actions-runner-controller](hhttps://github.com/actions-runner-controller/actions-runner-controller)
+- [https://github.com/actions-runner-controller/actions-runner-controller](https://github.com/actions-runner-controller/actions-runner-controller)
 
 - [https://github.com/Spendesk/github-actions-exporter](https://github.com/Spendesk/github-actions-exporter)
 
