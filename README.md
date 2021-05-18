@@ -14,7 +14,10 @@ to create and update the kubernetes resources using public available helm charts
 
 Contains an example for defining a self-hosted github actions runner in kubernetes (EKS).
 
-Generally need to build a runner image to your specific requirements rather than use the runner supplied. See: 
+I have not been able to get the supplied runner images to work:
+- https://hub.docker.com/r/summerwind/actions-runner
+- https://hub.docker.com/r/summerwind/actions-runner-dind
+and generally they don't meet your specific requirements for its necessary to build your own runner docker image. See: 
 - https://github.com/ministryofjustice/docker-github-actions-runner
 - https://github.com/myoung34/docker-github-actions-runner
 
